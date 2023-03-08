@@ -12,6 +12,8 @@ namespace Gameplay
         [Header("Preferences")]
         [SerializeField] private float _radius = 7f;
 
+        public float Radius => _radius;
+
         private DriftDirection _driftDirection;
 
         public DriftDirection DriftDirection

@@ -29,7 +29,7 @@ namespace Gameplay
             _objectPooler = objectPooler;
         }
 
-        public event Action onSpawnedDriftPoint;
+        public event Action<DriftPoint> onSpawned;
 
         #region MonoBehaviour
 
@@ -72,9 +72,11 @@ namespace Gameplay
             GameObject driftPointObject = _objectPooler.Spawn(_pool, position, rotation);
 
             if (!driftPointObject.TryGetComponent(out DriftPoint driftPoint)) return;
-            
+
             driftPoint.DriftDirection = _previousDriftDirection == DriftDirection.Left ? DriftDirection.Right : DriftDirection.Left;
             _previousDriftDirection = driftPoint.DriftDirection;
+
+            onSpawned?.Invoke(driftPoint);
         }
     }
 }
