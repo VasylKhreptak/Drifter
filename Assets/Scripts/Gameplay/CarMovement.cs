@@ -68,7 +68,7 @@ namespace Gameplay
             Vector3 direction = (_transform.position - _currentDriftPoint.Position).normalized;
             Vector3 left = Vector3.Cross(direction, Vector3.up).normalized;
             left *= _currentDriftPoint.DriftDirection == DriftDirection.Left ? 1 : -1;
-            Vector3 targetPoint = _currentDriftPoint.Position + left * _currentDriftPoint.Radius;
+            Vector3 targetPoint = _currentDriftPoint.Position + left * _currentDriftPoint.FollowPointDistance;
             return targetPoint;
         }
 

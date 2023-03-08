@@ -10,9 +10,9 @@ namespace Gameplay
         [SerializeField] private Transform _transform;
 
         [Header("Preferences")]
-        [SerializeField] private float _radius = 7f;
+        [SerializeField] private float _followPointDistance = 10f;
 
-        public float Radius => _radius;
+        public float FollowPointDistance => _followPointDistance;
 
         private DriftDirection _driftDirection;
 
@@ -47,7 +47,7 @@ namespace Gameplay
             if (_transform == null) return;
 
             Gizmos.color = Color.WithAlpha(UnityEngine.Color.red, 0.5f);
-            Gizmos.DrawSphere(_transform.position, _radius);
+            Gizmos.DrawSphere(_transform.position, _followPointDistance);
         }
     }
 }
