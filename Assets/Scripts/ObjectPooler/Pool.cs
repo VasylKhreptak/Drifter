@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace Plugins.ObjectPooler
+namespace ObjectPooler
 {
     public enum Pool
     {

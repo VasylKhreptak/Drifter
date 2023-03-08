@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Plugins.ObjectPooler
+namespace ObjectPooler
 {
     public class ObjectPooler : MonoBehaviour
     {
