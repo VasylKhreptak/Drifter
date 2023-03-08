@@ -14,7 +14,7 @@ namespace Gameplay
 
         private DriftPoint _currentDriftPoint;
 
-        private Vector3 _targetPoint;
+        private Vector3 _followPoint;
 
         #region MonoBehaviour
 
@@ -33,11 +33,11 @@ namespace Gameplay
         {
             if (_currentDriftPoint == null) return;
 
-            _targetPoint = GetTargetPoint();
+            _followPoint = GetFollowPoint();
 
-            Move(in _targetPoint);
+            Move(in _followPoint);
 
-            Rotate(in _targetPoint);
+            Rotate(in _followPoint);
         }
 
         private void OnDisable()
@@ -54,7 +54,8 @@ namespace Gameplay
 
         private void Move(in Vector3 targetPoint)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPoint, _moveSpeed * Time.deltaTime);
+            // transform.position = Vector3.MoveTowards(transform.position, targetPoint, _moveSpeed * Time.deltaTime);
+            _transform.Translate(Vector3.forward * _moveSpeed * Time.deltaTime);
         }
 
         private void Rotate(in Vector3 targetPoint)
@@ -63,7 +64,7 @@ namespace Gameplay
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, _rotateSpeed * Time.deltaTime);
         }
 
-        private Vector3 GetTargetPoint()
+        private Vector3 GetFollowPoint()
         {
             Vector3 direction = (_transform.position - _currentDriftPoint.Position).normalized;
             Vector3 left = Vector3.Cross(direction, Vector3.up).normalized;
@@ -76,7 +77,7 @@ namespace Gameplay
         {
             if (_transform == null || _currentDriftPoint == null) return;
 
-            Vector3 point = GetTargetPoint();
+            Vector3 point = GetFollowPoint();
             Gizmos.color = UnityEngine.Color.green;
             Gizmos.DrawSphere(point, 0.5f);
         }
