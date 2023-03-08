@@ -35,7 +35,7 @@ namespace Gameplay
 
             _followPoint = GetFollowPoint();
 
-            Move(in _followPoint);
+            MoveForward();
 
             Rotate(in _followPoint);
         }
@@ -52,9 +52,8 @@ namespace Gameplay
             _currentDriftPoint = driftPoint;
         }
 
-        private void Move(in Vector3 targetPoint)
+        private void MoveForward()
         {
-            // transform.position = Vector3.MoveTowards(transform.position, targetPoint, _moveSpeed * Time.deltaTime);
             _transform.Translate(Vector3.forward * _moveSpeed * Time.deltaTime);
         }
 
