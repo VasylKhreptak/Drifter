@@ -24,10 +24,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/CarMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/DriftDirection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/DriftPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/LevelManagement/LevelCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/LevelManagement/LevelProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/Score/ScoreBank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/Camera/LockCameraX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/Gameplay/DriftPointFill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/Gameplay/Score/TotalScoreRecorder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/UI/LevelText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/UI/ScoreText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPooler/ZenjectedObjectPooler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Zenject/DriftPointSpawnerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -105,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678262920270</updated>
       <workItem from="1678262935237" duration="1000" />
-      <workItem from="1678263711632" duration="45476000" />
+      <workItem from="1678263711632" duration="49185000" />
     </task>
     <servers />
   </component>
