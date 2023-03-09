@@ -6,7 +6,7 @@ namespace Extenisons
     {
         public static float WithSign(this float value, int sign)
         {
-            return Mathf.Abs(value) * Mathf.Sign(sign);
+            return UnityEngine.Mathf.Abs(value) * UnityEngine.Mathf.Sign(sign);
         }
         
         public static float Remap(this float value, float from1, float to1, float from2, float to2)
