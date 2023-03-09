@@ -90,6 +90,7 @@ namespace Graphics.Gameplay
             if (_fill.FillAmount >= 1f)
             {
                 onFillFailed?.Invoke();
+                _fill.Set(0f);
                 StopFilling();
             }
             else
