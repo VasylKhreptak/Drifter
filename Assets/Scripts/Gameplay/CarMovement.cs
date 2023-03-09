@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zenject;
 
 namespace Gameplay
 {
@@ -6,22 +7,28 @@ namespace Gameplay
     {
         [Header("References")]
         [SerializeField] private Transform _transform;
-        [SerializeField] private DriftPointSpawner _driftPointSpawner;
 
         [Header("Preferences")]
         [SerializeField] private float _moveSpeed;
         [SerializeField] private float _rotateSpeed;
 
+        private DriftPointSpawner _driftPointSpawner;
+
         private DriftPoint _currentDriftPoint;
 
         private Vector3 _followPoint;
+
+        [Inject]
+        private void Construct(DriftPointSpawner driftPointSpawner)
+        {
+            _driftPointSpawner = driftPointSpawner;
+        }
 
         #region MonoBehaviour
 
         private void OnValidate()
         {
             _transform ??= GetComponent<Transform>();
-            _driftPointSpawner ??= FindObjectOfType<DriftPointSpawner>();
         }
 
         private void OnEnable()

@@ -3,16 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8bef18fb-a16e-4879-be02-6ec1c067700e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drifter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drifter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FramerateController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FramerateController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DriftPointFillController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DriftPointFillController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DriftPoint.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DriftPoint.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScreenSleepDisabler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScreenSleepDisabler.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/CarMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/CarMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/DriftPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/DriftPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +19,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/43b8187fb18447918f21fa5a5862732e12b800/da/d5dc513b/PointerDownEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DriftPointFillController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Graphics/Imported/LowpolyCarsPack/Script/SimpleCarController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/OnBecameInvisibleEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extenisons/Float.cs" root0="FORCE_HIGHLIGHTING" />
@@ -31,7 +28,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/Camera/LockCameraX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/Gameplay/DriftPointFill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPooler/ZenjectedObjectPooler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Zenject/DriftPointSpawnerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Zenject/ObjectPoolerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Ghost-Rider/Assets/Scripts/Extensions/Debug.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2Miuq03xlkOnoMAbqvIZkOgkukG" />
   <component name="ProjectViewState">
@@ -102,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678262920270</updated>
       <workItem from="1678262935237" duration="1000" />
-      <workItem from="1678263711632" duration="24246000" />
+      <workItem from="1678263711632" duration="33073000" />
     </task>
     <servers />
   </component>
