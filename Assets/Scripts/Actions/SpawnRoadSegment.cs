@@ -55,8 +55,6 @@ namespace Actions
         {
             Pool road = GetRoadToSpawn();
             
-            Debug.Log(road.ToString());
-
             _objectPooler.Spawn(GetRoadToSpawn(), _transform.position + _spawnOffset, Quaternion.Euler(_spawnRotation));
         }
 
@@ -83,8 +81,6 @@ namespace Actions
             currentLevel = Mathf.Clamp(currentLevel, _minLevel, _maxLevel);
 
             float i = ((float)currentLevel).Remap(_minLevel, _maxLevel, 0f, 1f);
-
-            Debug.Log("Probability: " + Extensions.AnimationCurve.Evaluate(_probabilityCurve, _minProbability, _maxProbability, i));
             return Extensions.AnimationCurve.Evaluate(_probabilityCurve, _minProbability, _maxProbability, i);
         }
     }
