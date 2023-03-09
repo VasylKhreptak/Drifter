@@ -8,6 +8,7 @@ namespace Gameplay
     {
         [Header("References")]
         [SerializeField] private Transform _transform;
+        [SerializeField] private Transform _arrowTransform;
 
         [Header("Preferences")]
         [SerializeField] private float _followPointDistance = 10f;
@@ -35,9 +36,9 @@ namespace Gameplay
 
         private void SetDriftDirection(DriftDirection driftDirection)
         {
-            Vector3 localScale = _transform.localScale;
+            Vector3 localScale = _arrowTransform.localScale;
             localScale = new Vector3(localScale.x.WithSign(driftDirection == DriftDirection.Left ? 1 : -1), localScale.y, localScale.z);
-            _transform.localScale = localScale;
+            _arrowTransform.localScale = localScale;
 
             _driftDirection = driftDirection;
         }
