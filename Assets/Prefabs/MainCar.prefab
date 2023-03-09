@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transform: {fileID: 5504037456326041537}
   _moveSpeed: 20
-  _rotateSpeed: 9
+  _rotateSpeed: 8
 --- !u!54 &699510779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -344,10 +344,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e96a83c78bece44d8bbe11edfdd9c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transform: {fileID: 5504149666636909379}
+  _transform: {fileID: 5504074352257503057}
   _axisConstraint: 0
-  _localRotationOffset: {x: -10, y: 0, z: 0}
-  _smoothByDeltaTime: 0
+  _localRotationOffset: {x: -700, y: 0, z: 0}
+  _smoothByDeltaTime: 1
 --- !u!1 &5509436778682400537
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,10 +511,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e96a83c78bece44d8bbe11edfdd9c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transform: {fileID: 5504149666636909379}
+  _transform: {fileID: 5511434146506797091}
   _axisConstraint: 0
-  _localRotationOffset: {x: 10, y: 0, z: 0}
-  _smoothByDeltaTime: 0
+  _localRotationOffset: {x: -700, y: 0, z: 0}
+  _smoothByDeltaTime: 1
 --- !u!1 &5509553402521190683
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,10 +643,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e96a83c78bece44d8bbe11edfdd9c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transform: {fileID: 5504149666636909379}
+  _transform: {fileID: 5511538608053395337}
   _axisConstraint: 0
-  _localRotationOffset: {x: 10, y: 0, z: 0}
-  _smoothByDeltaTime: 0
+  _localRotationOffset: {x: -700, y: 0, z: 0}
+  _smoothByDeltaTime: 1
 --- !u!1 &5509927078730195679
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,8 +745,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transform: {fileID: 5504149666636909379}
   _axisConstraint: 0
-  _localRotationOffset: {x: -10, y: 0, z: 0}
-  _smoothByDeltaTime: 0
+  _localRotationOffset: {x: -700, y: 0, z: 0}
+  _smoothByDeltaTime: 1
 --- !u!1 &5510040746591938117
 GameObject:
   m_ObjectHideFlags: 0
