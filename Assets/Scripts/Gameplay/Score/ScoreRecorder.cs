@@ -3,7 +3,7 @@ using System.Collections;
 using Graphics.Gameplay;
 using UnityEngine;
 
-namespace Gameplay
+namespace Gameplay.Score
 {
     public class ScoreRecorder : MonoBehaviour
     {
