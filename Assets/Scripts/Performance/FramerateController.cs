@@ -6,7 +6,7 @@ namespace Performance
     {
         #region MonoBehaviour
 
-        private void Awake()
+        private void Start()
         {
             SetTargetFramerate(UnityEngine.Screen.currentResolution.refreshRate);
         }
