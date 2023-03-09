@@ -38,17 +38,19 @@ namespace Gameplay
 
         private void Update()
         {
+            MoveForward();
+
             if (_currentDriftPoint == null) return;
 
             _followPoint = GetFollowPoint();
-
-            MoveForward();
 
             Rotate(in _followPoint);
         }
 
         private void OnDisable()
         {
+            _currentDriftPoint = null;
+
             _driftPointSpawner.onSpawned -= SetCurrentDriftPoint;
         }
 
