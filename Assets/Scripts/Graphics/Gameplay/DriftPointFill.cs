@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Graphics.Gameplay
@@ -12,6 +13,8 @@ namespace Graphics.Gameplay
         [SerializeField] private AnimationCurve _fillCurve;
         [SerializeField, Range(0f, 1f)] private float _fillAmount;
         [SerializeField] private Gradient _gradient;
+
+        public event Action<float> onValueChanged;
 
         private Vector3 _startScale;
 
@@ -43,6 +46,7 @@ namespace Graphics.Gameplay
             UpdateColor(evaluatedFill);
 
             _fillAmount = fillAmount;
+            onValueChanged?.Invoke(fillAmount);
         }
 
         private void UpdateScale(float fillAmount)

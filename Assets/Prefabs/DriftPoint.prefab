@@ -223,6 +223,71 @@ MonoBehaviour:
   _minScore: 1
   _maxScore: 4
   _scoreAddDelay: 0.05
+--- !u!1 &5827466322646908133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337380990513772842}
+  - component: {fileID: 2268412896628972780}
+  - component: {fileID: 1285092810749136085}
+  m_Layer: 0
+  m_Name: StarEarner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &337380990513772842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5827466322646908133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5985608643204220404}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2268412896628972780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5827466322646908133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c304d11baa5744580294303bc3d04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 337380990513772842}
+  _fill: {fileID: 9174569357854246811}
+  _earnThreshold: 0.5
+  _bonusLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  _maxBonusDistance: 3.01
+--- !u!114 &1285092810749136085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5827466322646908133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde4431400dbb94458f71551c38f0dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bonusEarner: {fileID: 2268412896628972780}
 --- !u!1 &5894222506457852386
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec0231c8cda25664a9838f35742ae767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _scoreRecorder: {fileID: 4440930072444975644}
 --- !u!1 &5985608643204220299
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +374,7 @@ Transform:
   - {fileID: 2218208920906176461}
   - {fileID: 3122994571113736805}
   - {fileID: 587799160882331128}
+  - {fileID: 337380990513772842}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

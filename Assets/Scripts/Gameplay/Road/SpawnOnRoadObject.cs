@@ -82,7 +82,7 @@ namespace Gameplay.Road
             return Quaternion.identity;
         }
 
-        private void OnDrawGizmosSelected()
+        private void OnDrawGizmos()
         {
             if (_transform == null) return;
 

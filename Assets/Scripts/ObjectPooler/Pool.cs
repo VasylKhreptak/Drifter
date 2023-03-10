@@ -6,5 +6,7 @@ namespace ObjectPooler
         StraightRoad = 1,
         RoadWithTurns = 2,
         Spikes = 3,
+        StarBonus = 4,
+        FinishLine = 5,
     }
 }
