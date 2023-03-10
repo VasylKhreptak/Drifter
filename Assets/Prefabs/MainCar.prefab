@@ -96,6 +96,51 @@ MonoBehaviour:
   - {fileID: 3445582842560463452}
   - {fileID: 2470175706163445061}
   - {fileID: 1288892477394569239}
+--- !u!1 &4242928646045204143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8028849604929332029}
+  - component: {fileID: 5487028029283817093}
+  m_Layer: 6
+  m_Name: ObstacleCollisionEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8028849604929332029
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242928646045204143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5504037456326041537}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5487028029283817093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242928646045204143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6a73b39cf5dd541b65fa761ac0a297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collisionEnterEvent: {fileID: 2683249934153953419}
 --- !u!1 &5507918099676224987
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,6 +184,8 @@ GameObject:
   - component: {fileID: 5504037456326041537}
   - component: {fileID: 699510778}
   - component: {fileID: 699510779}
+  - component: {fileID: 4132892109819125209}
+  - component: {fileID: 2683249934153953419}
   m_Layer: 6
   m_Name: MainCar
   m_TagString: Untagged
@@ -160,6 +207,7 @@ Transform:
   m_Children:
   - {fileID: 5975513172890122258}
   - {fileID: 370311300151830019}
+  - {fileID: 8028849604929332029}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -190,10 +238,38 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &4132892109819125209
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509285610591131205}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8831782, y: 1.7126105, z: 5.506212}
+  m_Center: {x: -0.022531271, y: 0.35630524, z: -1.8339238}
+--- !u!114 &2683249934153953419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509285610591131205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abfa1f8bbffad0440ad9fb687082ad94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &5509348724621846005
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +280,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5504036999265441601}
   - component: {fileID: 5479625731159113855}
-  - component: {fileID: 1083722929}
   m_Layer: 6
   m_Name: CarBody
   m_TagString: Untagged
@@ -236,18 +311,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5509348724621846005}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1083722929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5509348724621846005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d4ce3fd58f1c243906752c89a16c9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5509353820531431293
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +821,6 @@ GameObject:
   - component: {fileID: 5511756333943372403}
   - component: {fileID: 5477746273833435987}
   - component: {fileID: 5487561246700869785}
-  - component: {fileID: 2458072826181391782}
   m_Layer: 6
   m_Name: Car_D_03_line03
   m_TagString: Untagged
@@ -831,19 +893,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2458072826181391782
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5510040746591938117}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.2258325, y: 1.3226097, z: 5.668474}
-  m_Center: {x: 0, y: 1.1396719, z: 0.25895238}
 --- !u!1 &5510129486235751563
 GameObject:
   m_ObjectHideFlags: 0

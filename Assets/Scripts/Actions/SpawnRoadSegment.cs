@@ -53,8 +53,6 @@ namespace Actions
 
         private void Spawn()
         {
-            Pool road = GetRoadToSpawn();
-            
             _objectPooler.Spawn(GetRoadToSpawn(), _transform.position + _spawnOffset, Quaternion.Euler(_spawnRotation));
         }
 
