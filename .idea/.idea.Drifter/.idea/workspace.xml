@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8bef18fb-a16e-4879-be02-6ec1c067700e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drifter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drifter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CBA/Delay/DelayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CBA/Delay/DelayManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StraightRoad.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StraightRoad.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TurnedRoad.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TurnedRoad.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actions/SpawnRoadSegment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actions/SpawnRoadSegment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPooler/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPooler/Pool.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,14 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa18592.13170/AnimationCurve.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa18592.21287/Float.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa18592.24107/AnimationCurve.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/43b8187fb18447918f21fa5a5862732e12b800/da/d5dc513b/PointerDownEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Graphics/Imported/LowpolyCarsPack/Script/SimpleCarController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/DisablePool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/ResetTotalScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/SpawnRoadSegment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/StopDelayedEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/OnBecameInvisibleEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extenisons/AnimationCurve.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extenisons/Float.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,6 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/DriftPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/LevelManagement/LevelCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/LevelManagement/LevelProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/Road/SpawnOnRoadObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/Score/ScoreBank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/Camera/LockCameraX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Graphics/Gameplay/DriftPointFill.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,6 +43,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Zenject/LevelProviderInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Zenject/ObjectPoolerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Zenject/ScoreBankInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.9/Runtime/Behaviours/CinemachineVirtualCamera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.9/Runtime/Core/CinemachineCore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Ghost-Rider/Assets/Scripts/Extensions/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Ghost-Rider/Assets/Scripts/Extensions/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -117,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678262920270</updated>
       <workItem from="1678262935237" duration="1000" />
-      <workItem from="1678263711632" duration="57139000" />
+      <workItem from="1678263711632" duration="62418000" />
     </task>
     <servers />
   </component>

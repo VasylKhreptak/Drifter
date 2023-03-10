@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
 namespace CBA.Delay
@@ -39,6 +40,8 @@ namespace CBA.Delay
         public static void StopWaiting(ref Coroutine coroutine)
         {
             if (coroutine == null) return;
+
+            if (SceneManager.GetActiveScene().isLoaded == false) return;
 
             _monoBehaviour.StopCoroutine(coroutine);
             coroutine = null;

@@ -76,10 +76,9 @@ namespace Actions
         private float GetTurnedRoadSpawnProbability()
         {
             int currentLevel = _levelProvider.CurrentLevel;
-            currentLevel = Mathf.Clamp(currentLevel, _minLevel, _maxLevel);
 
-            float i = ((float)currentLevel).Remap(_minLevel, _maxLevel, 0f, 1f);
-            return Extensions.AnimationCurve.Evaluate(_probabilityCurve, _minProbability, _maxProbability, i);
+            return Extensions.AnimationCurve.Evaluate(_probabilityCurve, _minLevel, _maxLevel, 
+                currentLevel, _minProbability, _maxProbability);
         }
     }
 }
