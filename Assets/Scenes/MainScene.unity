@@ -323,6 +323,51 @@ Transform:
   m_Father: {fileID: 179132589}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &150008236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150008237}
+  - component: {fileID: 150008238}
+  m_Layer: 0
+  m_Name: ResetCameraPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &150008237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150008236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1705906181}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &150008238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150008236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3592327b29df4408ce647cb945ea5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _virtualCamera: {fileID: 918678347}
 --- !u!1 &154789222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,10 +2247,10 @@ MonoBehaviour:
   m_LookaheadTime: 0.846
   m_LookaheadSmoothing: 28.1
   m_LookaheadIgnoreY: 0
-  m_XDamping: 6
+  m_XDamping: 3
   m_YDamping: 0
-  m_ZDamping: 6
-  m_TargetMovementOnly: 1
+  m_ZDamping: 3
+  m_TargetMovementOnly: 0
   m_ScreenX: 0.5
   m_ScreenY: 0.68
   m_CameraDistance: 46.4
@@ -2296,6 +2341,7 @@ Transform:
   - {fileID: 1718169703}
   - {fileID: 48219554}
   - {fileID: 2140892298}
+  - {fileID: 150008237}
   m_Father: {fileID: 243441834}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2321,6 +2367,7 @@ MonoBehaviour:
   - {fileID: 1887377199}
   - {fileID: 122772938}
   - {fileID: 2140892299}
+  - {fileID: 150008238}
 --- !u!1 &1718169702
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8bef18fb-a16e-4879-be02-6ec1c067700e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drifter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drifter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CBA/Delay/DelayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CBA/Delay/DelayManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StraightRoad.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StraightRoad.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TurnedRoad.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TurnedRoad.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actions/SpawnRoadSegment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actions/SpawnRoadSegment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPooler/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPooler/Pool.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +14,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/43b8187fb18447918f21fa5a5862732e12b800/da/d5dc513b/PointerDownEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Graphics/Imported/LowpolyCarsPack/Script/SimpleCarController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/DisablePool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/ResetCameraPosition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/ResetTotalScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/SpawnRoadSegment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actions/StopDelayedEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -118,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678262920270</updated>
       <workItem from="1678262935237" duration="1000" />
-      <workItem from="1678263711632" duration="62418000" />
+      <workItem from="1678263711632" duration="64772000" />
     </task>
     <servers />
   </component>
